@@ -1,0 +1,28 @@
+default: &default
+  adapter: postgresql
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  timeout: 5000
+
+development:
+  <<: *default
+  database: beky3vvszbyk3ugbldgk
+  username: ulyckviaopfm33rm8uea
+  password: JSSVYh868vKtQhrVQ8uueM7eBeUsGb
+  host: beky3vvszbyk3ugbldgk-postgresql.services.clever-cloud.com
+  port: 5432
+
+test:
+  <<: *default
+  database: beky3vvszbyk3ugbldgk
+  username: ulyckviaopfm33rm8uea
+  password: JSSVYh868vKtQhrVQ8uueM7eBeUsGb
+  host: beky3vvszbyk3ugbldgk-postgresql.services.clever-cloud.com
+  port: 5432
+
+production:
+  <<: *default
+  database: beky3vvszbyk3ugbldgk
+  username: ulyckviaopfm33rm8uea
+  password: JSSVYh868vKtQhrVQ8uueM7eBeUsGb
+  host: beky3vvszbyk3ugbldgk-postgresql.services.clever-cloud.com
+  port: 5432
